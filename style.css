@@ -1,0 +1,251 @@
+*{
+    margin:0;
+}
+@font-face {
+    font-family: proxima-nova;
+    src: url(ProximaNovaFont.otf);
+  }
+.maincontext{
+    position: relative;
+    height:1500px;
+    width:1200px;
+}
+.homepage{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'content img';
+    height:50%;
+    width:100%;
+}
+.homeimg{
+    grid-area:'img';
+}
+.homecontent{
+    grid-area: 'cont';
+    padding-top: 65px;
+    padding-left:35px;
+}
+.homecontent .btnholder{
+    float: right;
+    padding:16px 45px 0 10px;
+}
+.btn1{
+    font-family: 'proxima-nova';
+    font-style: normal;
+    font-size:16px;
+    font-weight: 400;
+    text-decoration: none solid rgb(40, 44, 63);
+    color: #282c3f;
+    padding-right:40px;
+}
+.btn1:hover{
+    color:#fc8019;
+}
+.btn2{
+    font-family:'proxima-nova';
+    font-style: normal;
+    font-size:16px;
+    font-weight: 600;
+    color:white;
+    background-color: black;
+    border-color: transparent;
+    padding:10px 30px;
+}
+.title{
+    position:absolute;
+    width:100%;
+    height:100px;
+    top:27%;
+}
+.title h1{
+    font-family:'proxima-nova';
+    font-size:50px;
+    color:black;
+    padding-bottom: 15px;
+}
+.title p{
+    font-family:'proxima-nova';
+    font-size:24px;
+    font-weight: 300;
+    color:#686b78;
+}
+.searchbox{
+    position:absolute;
+    top:45%;
+    border:1px solid #fc8019;
+}
+.searchbox input{
+    border:none;
+    padding:15px 300px 15px 20px;
+    margin:0;
+}
+.btn3{
+    background-color:#fc8019;
+    border-color: transparent;
+    padding:15px 20px 15px 20px;
+    margin:0;
+    font-family:'proxima-nova';
+    font-size:14px;
+    font-weight: 500;
+    color: white;
+}
+.aboutcity{
+    position:absolute;
+    top:58%;
+}
+.aboutcity .firstpara{
+    font-family:'proxima-nova';
+    font-size:15px;
+    font-weight: 400;
+    color:#a9abb2;
+    padding-bottom: 15px;
+}
+.aboutcity .secondpara{
+    font-family:'proxima-nova';
+    font-size:14px;
+    font-weight: 500;
+    color:#a9abb2;
+}
+.services{
+    position:absolute;
+    top:38%;
+    width:108%;
+    height:35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'card card card';
+    grid-gap: 10px;
+    background-color: #2b1e16;
+}
+.servicecard{
+    grid-area: 'card';
+    width:300px;
+    height:350px;
+    margin:0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servicecard .cardimg{
+    position:absolute;
+    top:2%;
+    width:100px;
+    height:10px;
+}
+.servicecard .firstline{
+    color:#ffffff;
+    font-family:'proxima-nova';
+    font-size:20px;
+    font-weight:600;
+    position:absolute;
+    top:65%;
+    margin-left:50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.servicecard .secondline{
+    color:#e0cbc1;
+    font-family:'proxima-nova';
+    font-size:15px;
+    font-weight:300;
+    position:absolute;
+    top:75%;
+    margin-left:45px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.ad{
+    display:grid;
+    background-color: white;
+    position:absolute;
+    top:73%;
+    height:40%;
+    width:108%;
+    grid-template-columns: 32% 34% 34%;
+    grid-template-areas: 'content img img';
+    grid-gap:0;
+}
+.adcontent{
+    grid-area: 'content';
+    padding:20px 45px 0px 15px;
+    margin:20px 15px 0px 20px;
+    width:700px;
+}
+.adimg1{
+    grid-area: 'img';
+    position: absolute;
+    left:40%;
+    width:400px;
+    height:500px;
+}
+.adimg2{
+    grid-area: 'img';
+    position: absolute;
+    top:15%;
+    left:68%;
+    width:400px;
+    height:600px;
+}
+.adcontent h1{
+    font-family:'proxima-nova';
+    font-size:40px;
+    font-weight:600;
+    color:#282c3f;
+    margin-top:120px;
+    padding-bottom: 25px;
+}
+.adcontent{
+    font-family: 'proxima-nova';
+    font-size: 20px;
+    font-weight: 300;
+    color:#7e808c;
+}
+.adcontent img{
+    padding:35px 10px 0px 0px;
+}
+.footer{
+    position: absolute;
+    top:118%;
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    width:108%;
+    height:45%;
+    justify-content: space-evenly;
+}
+.about{
+    margin-left:0;
+    width:200px;
+    height:250px;
+}
+.aboutlist > li{
+    list-style-type:none;
+    color:white;
+    font-family: 'proxima-nova';
+    padding-bottom:15px;
+    font-size: 17px;
+    font-weight: 300;
+}
+.aboutlist .listitm1{
+    color:#808080;
+    margin-top:50px;
+    padding-bottom:50px;
+    font-family: 'proxima-nova';
+    font-size: 15px;
+    font-weight: 600;
+}
+.redirectapp img:nth-child(1){
+    margin-top:50px;
+    border:1px solid white;
+    border-radius: 5px;
+    padding:2px;
+}
+.redirectapp img{
+    margin-top:20px;
+    border:1px solid white;
+    border-radius: 5px;
+    padding:2px;
+}
